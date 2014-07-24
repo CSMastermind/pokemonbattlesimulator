@@ -1,0 +1,24 @@
+{
+  "name": "pokemonbattlesimulator",
+  "version": "0.0.0",
+  "description": "Simulates all possible battes for a given set of pokemon",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSMastermind/pokemonbattlesimulator.git"
+  },
+  "keywords": [
+    "pokemon",
+    "battle",
+    "simulator"
+  ],
+  "author": "Chris Seltzer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSMastermind/pokemonbattlesimulator/issues"
+  },
+  "homepage": "https://github.com/CSMastermind/pokemonbattlesimulator"
+}
