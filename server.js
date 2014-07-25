@@ -1,23 +1,34 @@
+var Promise = require('bluebird'),
+    fs = Promise.promisifyAll(require('fs'));
 
-var names = ['Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard', 'Squirtle', 'Wartortle', 'Blastoise',
-             'Caterpie', 'Metapod', 'Butterfree', 'Weedle', 'Kakuna', 'Beedrill', 'Pidgey', 'Pidgeotto', 'Pidgeot', 'Rattata',
-             'Raticate', 'Spearow', 'Fearow', 'Ekans', 'Arbok', 'Pikachu', 'Raichu', 'Sandshrew', 'Sandslash', 'Nidoran♀', 'Nidorina',
-             'Nidoqueen', 'Nidoran♂', 'Nidorino', 'Nidoking', 'Clefairy', 'Clefable', 'Vulpix', 'Ninetales', 'Jigglypuff', 'Wigglytuff',
-             'Zubat', 'Golbat', 'Oddish', 'Gloom', 'Vileplume', 'Paras', 'Parasect', 'Venonat', 'Venomoth', 'Diglett', 'Dugtrio',
-             'Meowth', 'Persian', 'Psyduck', 'Golduck', 'Mankey', 'Primeape', 'Growlithe', 'Arcanine', 'Poliwag', 'Poliwhirl',
-             'Poliwrath', 'Abra', 'Kadabra', 'Alakazam', 'Machop', 'Machoke', 'Machamp', 'Bellsprout', 'Weepinbell', 'Victreebel',
-             'Tentacool', 'Tentacruel', 'Geodude', 'Graveler', 'Golem', 'Ponyta', 'Rapidash', 'Slowpoke', 'Slowbro', 'Magnemite',
-             'Magneton', 'Farfetchd', 'Doduo', 'Dodrio', 'Seel', 'Dewgong', 'Grimer', 'Muk', 'Shellder', 'Cloyster', 'Gastly',
-             'Haunter', 'Gengar', 'Onix', 'Drowzee', 'Hypno', 'Krabby', 'Kingler', 'Voltorb', 'Electrode', 'Exeggcute', 'Exeggutor',
-             'Cubone', 'Marowak', 'Hitmonlee', 'Hitmonchan', 'Lickitung', 'Koffing', 'Weezing', 'Rhyhorn', 'Rhydon', 'Chansey', 'Tangela',
-             'Kangaskhan', 'Horsea', 'Seadra', 'Goldeen', 'Seaking', 'Staryu', 'Starmie', 'Mr. Mime', 'Scyther', 'Jynx', 'Electabuzz',
-             'Magmar', 'Pinsir', 'Tauros', 'Magikarp', 'Gyarados', 'Lapras', 'Ditto', 'Eevee', 'Vaporeon', 'Jolteon', 'Flareon', 'Porygon',
-             'Omanyte', 'Omastar', 'Kabuto', 'Kabutops', 'Aerodactyl', 'Snorlax', 'Articuno', 'Zapdos', 'Moltres', 'Dratini', 'Dragonair',
-             'Dragonite', 'Mewtwo', 'Mew'];
+fs.readFileAsync(__dirname + '/pokemon.json','utf8')
+  .then(renderJSON)
+  .then(generatePairings);
 
-// Generate all possible pairings
-for (var i = 0; i < names.length; i++) {
-  for (var j = 0; j < names.length; j++) {
-    console.log(names[i] + "\t\tvs\t\t" + names[j]);
+function renderJSON(rawtext) {
+  return JSON.parse(rawtext);
+}
+
+function generatePairings(pokemon) {
+  var matchups = [];
+
+  // Generate all possible pairings
+  for (var i = 0; i < pokemon.length; i++) {
+    for (var j = 0; j < pokemon.length; j++) {
+      matchups.push({'Trainer': pokemon[i].name, 'Opponent': pokemon[j].name});
+    }
   }
+
+  var toWrite = JSON.stringify(matchups);
+  toWrite = toWrite.replace(/\[/g, '[\n');
+  toWrite = toWrite.replace(/\]/g, '\n]');
+  toWrite = toWrite.replace(/\{/g, '  {\n');
+  toWrite = toWrite.replace(/\}/g, '\n  }');
+  toWrite = toWrite.replace(/,/g, ',\n');
+  toWrite = toWrite.replace(/:/g, ': ');
+  toWrite = toWrite.replace(/"Trainer"/g, '    "Trainer"');
+  toWrite = toWrite.replace(/"Opponent"/g, '    "Opponent"');
+
+  fs.writeFileAsync(__dirname + '/matchups.json', toWrite)
+    .then(function(){return 1;});
 }

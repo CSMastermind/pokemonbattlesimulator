@@ -16,6 +16,9 @@
     "simulator"
   ],
   "author": "Chris Seltzer",
+  "dependencies": {
+    "bluebird": "^1.2.3"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CSMastermind/pokemonbattlesimulator/issues"
