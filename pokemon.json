@@ -1,153 +1,602 @@
 [
-  {"name": "Bulbasaur"},
-  {"name": "Ivysaur"},
-  {"name": "Venusaur"},
-  {"name": "Charmander"},
-  {"name": "Charmeleon"},
-  {"name": "Charizard"},
-  {"name": "Squirtle"},
-  {"name": "Wartortle"},
-  {"name": "Blastoise"},
-  {"name": "Caterpie"},
-  {"name": "Metapod"},
-  {"name": "Butterfree"},
-  {"name": "Weedle"},
-  {"name": "Kakuna"},
-  {"name": "Beedrill"},
-  {"name": "Pidgey"},
-  {"name": "Pidgeotto"},
-  {"name": "Pidgeot"},
-  {"name": "Rattata"},
-  {"name": "Raticate"},
-  {"name": "Spearow"},
-  {"name": "Fearow"},
-  {"name": "Ekans"},
-  {"name": "Arbok"},
-  {"name": "Pikachu"},
-  {"name": "Raichu"},
-  {"name": "Sandshrew"},
-  {"name": "Sandslash"},
-  {"name": "Nidoran♀"},
-  {"name": "Nidorina"},
-  {"name": "Nidoqueen"},
-  {"name": "Nidoran♂"},
-  {"name": "Nidorino"},
-  {"name": "Nidoking"},
-  {"name": "Clefairy"},
-  {"name": "Clefable"},
-  {"name": "Vulpix"},
-  {"name": "Ninetales"},
-  {"name": "Jigglypuff"},
-  {"name": "Wigglytuff"},
-  {"name": "Zubat"},
-  {"name": "Golbat"},
-  {"name": "Oddish"},
-  {"name": "Gloom"},
-  {"name": "Vileplume"},
-  {"name": "Paras"},
-  {"name": "Parasect"},
-  {"name": "Venonat"},
-  {"name": "Venomoth"},
-  {"name": "Diglett"},
-  {"name": "Dugtrio"},
-  {"name": "Meowth"},
-  {"name": "Persian"},
-  {"name": "Psyduck"},
-  {"name": "Golduck"},
-  {"name": "Mankey"},
-  {"name": "Primeape"},
-  {"name": "Growlithe"},
-  {"name": "Arcanine"},
-  {"name": "Poliwag"},
-  {"name": "Poliwhirl"},
-  {"name": "Poliwrath"},
-  {"name": "Abra"},
-  {"name": "Kadabra"},
-  {"name": "Alakazam"},
-  {"name": "Machop"},
-  {"name": "Machoke"},
-  {"name":  "Machamp"},
-  {"name": "Bellsprout"},
-  {"name": "Weepinbell"},
-  {"name": "Victreebel"},
-  {"name": "Tentacool"},
-  {"name": "Tentacruel"},
-  {"name": "Geodude"},
-  {"name": "Graveler"},
-  {"name": "Golem"},
-  {"name": "Ponyta"},
-  {"name": "Rapidash"},
-  {"name": "Slowpoke"},
-  {"name": "Slowbro"},
-  {"name": "Magnemite"},
-  {"name": "Magneton"},
-  {"name": "Farfetchd"},
-  {"name": "Doduo"},
-  {"name": "Dodrio"},
-  {"name": "Seel"},
-  {"name": "Dewgong"},
-  {"name": "Grimer"},
-  {"name": "Muk"},
-  {"name": "Shellder"},
-  {"name": "Cloyster"},
-  {"name": "Gastly"},
-  {"name": "Haunter"},
-  {"name": "Gengar"},
-  {"name": "Onix"},
-  {"name": "Drowzee"},
-  {"name": "Hypno"},
-  {"name": "Krabby"},
-  {"name": "Kingler"},
-  {"name": "Voltorb"},
-  {"name": "Electrode"},
-  {"name": "Exeggcute"},
-  {"name": "Exeggutor"},
-  {"name": "Cubone"},
-  {"name": "Marowak"},
-  {"name": "Hitmonlee"},
-  {"name": "Hitmonchan"},
-  {"name": "Lickitung"},
-  {"name": "Koffing"},
-  {"name": "Weezing"},
-  {"name": "Rhyhorn"},
-  {"name": "Rhydon"},
-  {"name": "Chansey"},
-  {"name": "Tangela"},
-  {"name": "Kangaskhan"},
-  {"name": "Horsea"},
-  {"name": "Seadra"},
-  {"name": "Goldeen"},
-  {"name": "Seaking"},
-  {"name": "Staryu"},
-  {"name": "Starmie"},
-  {"name": "Mr. Mime"},
-  {"name": "Scyther"},
-  {"name": "Jynx"},
-  {"name": "Electabuzz"},
-  {"name": "Magmar"},
-  {"name": "Pinsir"},
-  {"name": "Tauros"},
-  {"name": "Magikarp"},
-  {"name": "Gyarados"},
-  {"name": "Lapras"},
-  {"name": "Ditto"},
-  {"name": "Eevee"},
-  {"name": "Vaporeon"},
-  {"name": "Jolteon"},
-  {"name": "Flareon"},
-  {"name": "Porygon"},
-  {"name": "Omanyte"},
-  {"name": "Omastar"},
-  {"name": "Kabuto"},
-  {"name": "Kabutops"},
-  {"name": "Aerodactyl"},
-  {"name": "Snorlax"},
-  {"name": "Articuno"},
-  {"name": "Zapdos"},
-  {"name": "Moltres"},
-  {"name": "Dratini"},
-  {"name": "Dragonair"},
-  {"name": "Dragonite"},
-  {"name": "Mewtwo"},
-  {"name": "Mew"}
+  {
+    "name": "Bulbasaur",
+    "minLevel": "5"
+  },
+  {
+    "name": "Ivysaur",
+    "minLevel": "16"
+  },
+  {
+    "name": "Venusaur",
+    "minLevel": "32"
+  },
+  {
+    "name": "Charmander",
+    "minLevel": "5"
+  },
+  {
+    "name": "Charmeleon",
+    "minLevel": "16"
+  },
+  {
+    "name": "Charizard",
+    "minLevel": "36"
+  },
+  {
+    "name": "Squirtle",
+    "minLevel": "5"
+  },
+  {
+    "name": "Wartortle",
+    "minLevel": "16"
+  },
+  {
+    "name": "Blastoise",
+    "minLevel": "36"
+  },
+  {
+    "name": "Caterpie",
+    "minLevel": "3"
+  },
+  {
+    "name": "Metapod",
+    "minLevel": "7"
+  },
+  {
+    "name": "Butterfree",
+    "minLevel": "10"
+  },
+  {
+    "name": "Weedle",
+    "minLevel": "3"
+  },
+  {
+    "name": "Kakuna",
+    "minLevel": "7"
+  },
+  {
+    "name": "Beedrill",
+    "minLevel": "10"
+  },
+  {
+    "name": "Pidgey",
+    "minLevel": "2"
+  },
+  {
+    "name": "Pidgeotto",
+    "minLevel": "18"
+  },
+  {
+    "name": "Pidgeot",
+    "minLevel": "36"
+  },
+  {
+    "name": "Rattata",
+    "minLevel": "2"
+  },
+  {
+    "name": "Raticate",
+    "minLevel": "20"
+  },
+  {
+    "name": "Spearow",
+    "minLevel": "6"
+  },
+  {
+    "name": "Fearow",
+    "minLevel": "20"
+  },
+  {
+    "name": "Ekans",
+    "minLevel": "6"
+  },
+  {
+    "name": "Arbok",
+    "minLevel": "22"
+  },
+  {
+    "name": "Pikachu",
+    "minLevel": "3"
+  },
+  {
+    "name": "Raichu",
+    "minLevel": "3"
+  },
+  {
+    "name": "Sandshrew",
+    "minLevel": "6"
+  },
+  {
+    "name": "Sandslash",
+    "minLevel": "22"
+  },
+  {
+    "name": "Nidoran♀",
+    "minLevel": "2"
+  },
+  {
+    "name": "Nidorina",
+    "minLevel": "16"
+  },
+  {
+    "name": "Nidoqueen",
+    "minLevel": "16"
+  },
+  {
+    "name": "Nidoran♂",
+    "minLevel": "2"
+  },
+  {
+    "name": "Nidorino",
+    "minLevel": "16"
+  },
+  {
+    "name": "Nidoking",
+    "minLevel": "16"
+  },
+  {
+    "name": "Clefairy",
+    "minLevel": "8"
+  },
+  {
+    "name": "Clefable",
+    "minLevel": "8"
+  },
+  {
+    "name": "Vulpix",
+    "minLevel": "15"
+  },
+  {
+    "name": "Ninetales",
+    "minLevel": "15"
+  },
+  {
+    "name": "Jigglypuff",
+    "minLevel": "3"
+  },
+  {
+    "name": "Wigglytuff",
+    "minLevel": "3"
+  },
+  {
+    "name": "Zubat",
+    "minLevel": "6"
+  },
+  {
+    "name": "Golbat",
+    "minLevel": "22"
+  },
+  {
+    "name": "Oddish",
+    "minLevel": "13"
+  },
+  {
+    "name": "Gloom",
+    "minLevel": "21"
+  },
+  {
+    "name": "Vileplume",
+    "minLevel": "21"
+  },
+  {
+    "name": "Paras",
+    "minLevel": "8"
+  },
+  {
+    "name": "Parasect",
+    "minLevel": "24"
+  },
+  {
+    "name": "Venonat",
+    "minLevel": "22"
+  },
+  {
+    "name": "Venomoth",
+    "minLevel": "31"
+  },
+  {
+    "name": "Diglett",
+    "minLevel": "15"
+  },
+  {
+    "name": "Dugtrio",
+    "minLevel": "26"
+  },
+  {
+    "name": "Meowth",
+    "minLevel": "10"
+  },
+  {
+    "name": "Persian",
+    "minLevel": "28"
+  },
+  {
+    "name": "Psyduck",
+    "minLevel": "15"
+  },
+  {
+    "name": "Golduck",
+    "minLevel": "33"
+  },
+  {
+    "name": "Mankey",
+    "minLevel": "10"
+  },
+  {
+    "name": "Primeape",
+    "minLevel": "28"
+  },
+  {
+    "name": "Growlithe",
+    "minLevel": "15"
+  },
+  {
+    "name": "Arcanine",
+    "minLevel": "15"
+  },
+  {
+    "name": "Poliwag",
+    "minLevel": "10"
+  },
+  {
+    "name": "Poliwhirl",
+    "minLevel": "25"
+  },
+  {
+    "name": "Poliwrath",
+    "minLevel": "25"
+  },
+  {
+    "name": "Abra",
+    "minLevel": "8"
+  },
+  {
+    "name": "Kadabra",
+    "minLevel": "16"
+  },
+  {
+    "name": "Alakazam",
+    "minLevel": "16"
+  },
+  {
+    "name": "Machop",
+    "minLevel": "15"
+  },
+  {
+    "name": "Machoke",
+    "minLevel": "28"
+  },
+  {
+    "name": "Machamp",
+    "minLevel": "28"
+  },
+  {
+    "name": "Bellsprout",
+    "minLevel": "13"
+  },
+  {
+    "name": "Weepinbell",
+    "minLevel": "21"
+  },
+  {
+    "name": "Victreebel",
+    "minLevel": "21"
+  },
+  {
+    "name": "Tentacool",
+    "minLevel": "5"
+  },
+  {
+    "name": "Tentacruel",
+    "minLevel": "30"
+  },
+  {
+    "name": "Geodude",
+    "minLevel": "8"
+  },
+  {
+    "name": "Graveler",
+    "minLevel": "25"
+  },
+  {
+    "name": "Golem",
+    "minLevel": "25"
+  },
+  {
+    "name": "Ponyta",
+    "minLevel": "28"
+  },
+  {
+    "name": "Rapidash",
+    "minLevel": "40"
+  },
+  {
+    "name": "Slowpoke",
+    "minLevel": "15"
+  },
+  {
+    "name": "Slowbro",
+    "minLevel": "37"
+  },
+  {
+    "name": "Magnemite",
+    "minLevel": "21"
+  },
+  {
+    "name": "Magneton",
+    "minLevel": "30"
+  },
+  {
+    "name": "Farfetchd",
+    "minLevel": "6"
+  },
+  {
+    "name": "Doduo",
+    "minLevel": "18"
+  },
+  {
+    "name": "Dodrio",
+    "minLevel": "31"
+  },
+  {
+    "name": "Seel",
+    "minLevel": "22"
+  },
+  {
+    "name": "Dewgong",
+    "minLevel": "34"
+  },
+  {
+    "name": "Grimer",
+    "minLevel": "23"
+  },
+  {
+    "name": "Muk",
+    "minLevel": "38"
+  },
+  {
+    "name": "Shellder",
+    "minLevel": "15"
+  },
+  {
+    "name": "Cloyster",
+    "minLevel": "15"
+  },
+  {
+    "name": "Gastly",
+    "minLevel": "18"
+  },
+  {
+    "name": "Haunter",
+    "minLevel": "25"
+  },
+  {
+    "name": "Gengar",
+    "minLevel": "25"
+  },
+  {
+    "name": "Onix",
+    "minLevel": "13"
+  },
+  {
+    "name": "Drowzee",
+    "minLevel": "9"
+  },
+  {
+    "name": "Hypno",
+    "minLevel": "26"
+  },
+  {
+    "name": "Krabby",
+    "minLevel": "15"
+  },
+  {
+    "name": "Kingler",
+    "minLevel": "28"
+  },
+  {
+    "name": "Voltorb",
+    "minLevel": "14"
+  },
+  {
+    "name": "Electrode",
+    "minLevel": "30"
+  },
+  {
+    "name": "Exeggcute",
+    "minLevel": "24"
+  },
+  {
+    "name": "Exeggutor",
+    "minLevel": "24"
+  },
+  {
+    "name": "Cubone",
+    "minLevel": "20"
+  },
+  {
+    "name": "Marowak",
+    "minLevel": "28"
+  },
+  {
+    "name": "Hitmonlee",
+    "minLevel": "30"
+  },
+  {
+    "name": "Hitmonchan",
+    "minLevel": "30"
+  },
+  {
+    "name": "Lickitung",
+    "minLevel": "37"
+  },
+  {
+    "name": "Koffing",
+    "minLevel": "30"
+  },
+  {
+    "name": "Weezing",
+    "minLevel": "35"
+  },
+  {
+    "name": "Rhyhorn",
+    "minLevel": "25"
+  },
+  {
+    "name": "Rhydon",
+    "minLevel": "42"
+  },
+  {
+    "name": "Chansey",
+    "minLevel": "7"
+  },
+  {
+    "name": "Tangela",
+    "minLevel": "22"
+  },
+  {
+    "name": "Kangaskhan",
+    "minLevel": "25"
+  },
+  {
+    "name": "Horsea",
+    "minLevel": "15"
+  },
+  {
+    "name": "Seadra",
+    "minLevel": "32"
+  },
+  {
+    "name": "Goldeen",
+    "minLevel": "5"
+  },
+  {
+    "name": "Seaking",
+    "minLevel": "33"
+  },
+  {
+    "name": "Staryu",
+    "minLevel": "10"
+  },
+  {
+    "name": "Starmie",
+    "minLevel": "10"
+  },
+  {
+    "name": "Mr. Mime",
+    "minLevel": "8"
+  },
+  {
+    "name": "Scyther",
+    "minLevel": "23"
+  },
+  {
+    "name": "Jynx",
+    "minLevel": "25"
+  },
+  {
+    "name": "Electabuzz",
+    "minLevel": "33"
+  },
+  {
+    "name": "Magmar",
+    "minLevel": "34"
+  },
+  {
+    "name": "Pinsir",
+    "minLevel": "15"
+  },
+  {
+    "name": "Tauros",
+    "minLevel": "21"
+  },
+  {
+    "name": "Magikarp",
+    "minLevel": "5"
+  },
+  {
+    "name": "Gyarados",
+    "minLevel": "20"
+  },
+  {
+    "name": "Lapras",
+    "minLevel": "15"
+  },
+  {
+    "name": "Ditto",
+    "minLevel": "23"
+  },
+  {
+    "name": "Eevee",
+    "minLevel": "25"
+  },
+  {
+    "name": "Vaporeon",
+    "minLevel": "25"
+  },
+  {
+    "name": "Jolteon",
+    "minLevel": "25"
+  },
+  {
+    "name": "Flareon",
+    "minLevel": "25"
+  },
+  {
+    "name": "Porygon",
+    "minLevel": "22"
+  },
+  {
+    "name": "Omanyte",
+    "minLevel": "30"
+  },
+  {
+    "name": "Omastar",
+    "minLevel": "40"
+  },
+  {
+    "name": "Kabuto",
+    "minLevel": "30"
+  },
+  {
+    "name": "Kabutops",
+    "minLevel": "40"
+  },
+  {
+    "name": "Aerodactyl",
+    "minLevel": "30"
+  },
+  {
+    "name": "Snorlax",
+    "minLevel": "30"
+  },
+  {
+    "name": "Articuno",
+    "minLevel": "50"
+  },
+  {
+    "name": "Zapdos",
+    "minLevel": "50"
+  },
+  {
+    "name": "Moltres",
+    "minLevel": "50"
+  },
+  {
+    "name": "Dratini",
+    "minLevel": "10"
+  },
+  {
+    "name": "Dragonair",
+    "minLevel": "30"
+  },
+  {
+    "name": "Dragonite",
+    "minLevel": "55"
+  },
+  {
+    "name": "Mewtwo",
+    "minLevel": "70"
+  }
 ]

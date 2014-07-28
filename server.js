@@ -1,15 +1,17 @@
 var Promise = require('bluebird'),
     fs = Promise.promisifyAll(require('fs'));
 
+var pokemon;
+
 fs.readFileAsync(__dirname + '/pokemon.json','utf8')
   .then(renderJSON)
-  .then(generatePairings);
+  .then(generateTeams);
 
 function renderJSON(rawtext) {
   return JSON.parse(rawtext);
 }
 
-function generatePairings(pokemon) {
+function generatePairings() {
   var matchups = [];
 
   // Generate all possible pairings
@@ -31,4 +33,44 @@ function generatePairings(pokemon) {
 
   fs.writeFileAsync(__dirname + '/matchups.json', toWrite)
     .then(function(){return 1;});
+}
+
+function generateTeams(poke) {
+  pokemon = poke;
+
+  var counter = 1;
+
+  for (var i = 1; i < 151; i++) {
+
+
+    for (var j = 1; j < 151; j++) {
+      var currentdate = new Date();
+      var datetime = "Last Sync: " + currentdate.getDate() + "/"
+        + (currentdate.getMonth()+1)  + "/"
+        + currentdate.getFullYear() + " @ "
+        + currentdate.getHours() + ":"
+        + currentdate.getMinutes() + ":"
+        + currentdate.getSeconds();
+
+      console.log(datetime);
+
+      for (var k = 1; k < 151; k++) {
+
+
+        for (var l = 1; l < 151; l++) {
+
+
+          for (var m = 1; m < 151; m++) {
+
+
+            for (var n = 1; n < 151; n++) {
+              counter = counter + 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  return counter;
 }
